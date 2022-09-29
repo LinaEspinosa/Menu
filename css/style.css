@@ -1,0 +1,193 @@
+:root {
+    --colorPrimary: #e29d16;
+    --colorSecondary: #212529;
+    --colorDarkBlack: #191919;
+    --fuente: 'Poppins', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente);
+    color: var(--colorSecondary);
+}
+
+body {
+    width: 100%;
+    max-height: 100vh;
+    background-color: var(--colorDarkBlack);
+    display: flex;
+    flex-direction: column;
+}
+
+.title-menu {
+    color: var(--colorPrimary);
+    text-align: center;
+    font-weight: 400;
+}
+
+.card {
+    background-color: var(--colorPrimary);
+    border: 1px solid var(--colorPrimary);
+    margin: .5rem;
+    border-radius: .5rem;
+    overflow: hidden;
+
+}
+
+.card .card-img {
+    width: 100%;
+
+}
+
+.card .content {
+    margin: .5rem;
+}
+
+.card .name-menu h4 {
+    font-weight: 600;
+}
+
+.card .description {
+    font-weight: 600;
+    font-size: .7rem;
+}
+
+.card .price {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.card .btn-input {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card .btn-input .btn-less button,
+.card .btn-input .btn-more button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorSecondary);
+    border: none;
+    padding: .4rem;
+    width: 3rem;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.card .btn-input .btn-less button {
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+}
+
+.card .btn-input .btn-more button {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+}
+
+
+.card .btn-input .cantidad input {
+    padding: .4rem;
+    width: 15.5rem;
+}
+
+.card .btn-add {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.card .btn-add button {
+    width: 22rem;
+    background-color: var(--colorSecondary);
+    border: none;
+    border-radius: .3rem;
+    color: #ffffff;
+    padding: .3rem;
+    margin-top: .5rem;
+    font-weight: 600;
+    font-size: .7rem;
+
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Media Query */
+
+@media only screen and (min-width: 376px) {
+    body {
+        display: flex;
+
+
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:.6rem;
+        /* margin: 2rem; */
+
+    }
+
+    .title-menu{
+        margin-top: 2rem;
+        font-size: 2.4rem;
+        font-weight:500;
+
+    }
+
+    .card {
+        width: 18rem;
+    }
+
+    .card .btn-input .cantidad input {
+        padding: .7rem;
+        width: 8rem;
+    }
+
+    .card .btn-input .btn-less button,
+    .card .btn-input .btn-more button {
+       
+        padding: .7rem;
+        width: 4rem;
+    }
+
+    .card .price {
+        font-weight: 700;
+        font-size:1.3rem;
+    }
+    .card .btn-add button {
+        padding: .5rem;
+        font-size:.8rem;
+    }
+    .card .name-menu h4{
+        font-size: 1rem;
+        margin-bottom: .5rem;
+        font-weight:500;
+
+    }
+
+    .card .description{
+        font-size:.9rem;
+    }
+
+    .card .content {
+        margin: .9rem;
+    }
+
+    .card .btn-add {
+        margin-top:.5rem;
+    }
+}
